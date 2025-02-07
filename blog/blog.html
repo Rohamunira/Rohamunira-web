@@ -25,9 +25,13 @@
         </div>
     </div>
     <div class="blogList">
-        <div v-for="data in blog_data.blog">
-            <h1>{{ data.title }}</h1>
-            <div v-html="data.content"></div>
+        <div v-for="data in blog_data.blog" class="blogContainer">
+            <h1><a>{{ data.title }}</a></h1>
+            <div class="post-info">
+                posted date: <span class="value">{{ data.date }}</span><br/>
+                category: <span class="value">{{ data.category }}</span>
+            </div>
+            <div v-html="(data.header_content).substring(0, 100)" class="short-desc"></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.45/dist/vue.global.prod.js"></script>

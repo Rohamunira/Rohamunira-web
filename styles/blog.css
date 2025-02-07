@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@font-face {
+    font-family: 'NexaHeavy';
+    src: url(../fonts/Nexa-Heavy.ttf);
+    font-weight: bolder;
+}
 div.blogList {
     width: 850px;
     margin: 0px auto;
@@ -5,4 +11,44 @@ div.blogList {
     left: 0px;
     right: 0px;
     z-index: 0;
+    .blogContainer {
+        background-color: #1d1e1f;
+        padding: 10px 30px 30px 30px!important;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        h1 {
+            margin-block: 10px;
+            a {
+                font-family: 'NexaHeavy';
+                color: rgb(255, 255, 255);
+            }
+        }
+        .post-info {
+            margin-block: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 15px;
+            .value {
+                color: #999;
+            }
+        }
+        .short-desc {
+            color: rgb(239, 239, 239);
+            font-family: Arial;
+            display: inline-block;
+            margin: 0px;
+            padding: 0px;
+            color: #ddd;
+        }
+        /* .short-desc::after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 30px;
+            height: 20px;
+            background-image: linear-gradient(to right, #00000000, #1d1e1f);
+            background-size: 30px;
+            background-repeat: no-repeat;
+            transform: translateX(-27px);
+        } */
+    }
 }
