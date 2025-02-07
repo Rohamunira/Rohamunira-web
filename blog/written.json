@@ -1,0 +1,20 @@
+{
+    "blog": [
+        {
+            "title": "about python",
+            "content": "python is the best programming language"
+        },
+        {
+            "title": "vue js",
+            "content": "vue is is add templating like PHP"
+        },
+        {
+            "title": "flask jinja",
+            "content": "this is my seccondary tool to create templating like <b>PHP</b><br><br>test"
+        },
+        {
+            "title": "playwright",
+            "content": "this is best UI automation tools which is can click button based UI not coords"
+        }
+    ]
+}

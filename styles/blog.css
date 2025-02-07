@@ -1,0 +1,8 @@
+div.blogList {
+    width: 850px;
+    margin: 0px auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+}

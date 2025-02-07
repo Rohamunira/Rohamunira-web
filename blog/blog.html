@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="external icon" href="../images/icons/rohamunira_icon_big.png" />
+    <link rel="external stylesheet" href="../styles/style.css" />
+    <link rel="external stylesheet" href="../styles/blog.css" />
+    <title>Rohanimura - Blog</title>
+</head>
+<body style="position: relative; display: flexbox; flex-direction: column">
+    <div class="background">
+        <div class="gradient"></div>
+    </div>
+    <!-- background samples -->
+    <div class="navigationBar">
+        <a href="../index.html"><img src="../images/icons/rohamunira_icon_big.png" width="40px" /></a>
+        <div>
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../showcase/showcase.html">showcase</a>
+                <a href="blog.html">blog</a>
+                <a href="../about/about.html">about</a>
+            </nav>
+        </div>
+    </div>
+    <div class="blogList">
+        <div v-for="data in blog_data.blog">
+            <h1>{{ data.title }}</h1>
+            <div v-html="data.content"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.45/dist/vue.global.prod.js"></script>
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    blog_data: null,
+                };
+            },
+            mounted() {
+                fetch("written.json") // this is load json
+                    .then((response) => response.json())
+                    .then((json) => {
+                        this.blog_data = json; // this is assign json to variable blog_data
+                    });
+                this.$nextTick(() => {
+                    eNavigationBar = document.querySelector(".navigationBar")
+                    document.querySelector(".blogList").style.top = (eNavigationBar.offsetTop + eNavigationBar.offsetHeight + 30) + "px";
+                });
+            }
+        }).mount(".blogList");
+    </script>
+</body>
+</html>
