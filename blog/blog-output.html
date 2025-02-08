@@ -27,6 +27,11 @@
     </div>
     <div class="blogOutput">
         <h1>{{ data.title }}</h1>
+        <div class="post-info">
+            posted date: <span class="value">{{ data.date }}</span><br/>
+            category: <span class="value">{{ data.category }}</span>
+        </div>
+        <div v-html="data.content" class="content"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.45/dist/vue.global.prod.js"></script>
     <script>
