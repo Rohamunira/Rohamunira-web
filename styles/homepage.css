@@ -21,6 +21,15 @@
     }
     .top-section {
         text-align: center;
+        h1 {
+            font-size: 80px;
+            margin-block: 0px;
+        }
+        .chat {
+            color: #ccc;
+            width: 60%;
+            display: inline-block;
+        }
         img {
             z-index: -1;
             position: absolute;
@@ -28,18 +37,21 @@
             top: 50%;
             transform: translate(-50%, -42.5%);
         }
-        .chat {
-            width: 60%;
-            display: inline-block;
-        }
     }
     .section {
-        margin-top: 110px;
+        margin-top: 14vw;
         display: flex;
         align-items: center;
         * {
-            width: 50%!important;
+            width: 70%;
             margin: 0px;
+            color: #ccc;
+        }
+        h1 {
+            color: #fff!important;
+        }
+        img {
+            width: 30%!important;
         }
         *:nth-child(1) {
             margin-right: 35px;

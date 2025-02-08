@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="external icon" href="../images/icons/rohamunira_icon_big.png" />
+    <meta name="keywords" content="Rohamunira, Content creator, blog"/>
+    <link rel="external stylesheet" href="../styles/style.css" />
+    <link rel="external stylesheet" href="../styles/blog.css" />
+    <title>Rohanimura - Blog</title>
+</head>
+<body style="position: relative; display: flexbox; flex-direction: column">
+    <div class="background">
+        <div class="gradient"></div>
+    </div>
+    <!-- background samples -->
+    <div class="navigationBar">
+        <a href="../index.html"><img src="../images/icons/rohamunira_icon_big.png" width="40px" /></a>
+        <div>
+            <nav>
+                <a href="../index.html">home</a>
+                <a href="../showcase/showcase.html">showcase</a>
+                <a href="blog.html">blog</a>
+                <a href="../about/about.html">about</a>
+            </nav>
+        </div>
+    </div>
+    <div class="blogOutput">
+        <h1>{{ data.title }}</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.45/dist/vue.global.prod.js"></script>
+    <script>
+        const { createApp } = Vue;
+        createApp({
+            data() {
+                return {
+                    data: null,
+                };
+            },
+            mounted() {
+                fetch("written.json") // this is load json
+                    .then((response) => response.json())
+                    .then((json) => {
+                        const urlParam = new URLSearchParams(window.location.search);
+                        if(urlParam.get('index')) {
+                            this.data = json.blog[urlParam.get('index')];
+                        } else {                        
+                            this.data = json.blog[0];
+                        }
+                    });
+                this.$nextTick(() => {
+                    // eNavigationBar = document.querySelector(".navigationBar");
+                    // document.querySelector(".blogOutput").style.top = (eNavigationBar.offsetTop + eNavigationBar.offsetHeight + 30) + "px";
+                    eNavigationBar = document.querySelector(".navigationBar")
+                    document.querySelector(".blogOutput").style.top = (eNavigationBar.offsetTop + eNavigationBar.offsetHeight + 30) + "px";
+                });
+            }
+        }).mount(".blogOutput");
+    </script>
+</body>
+</html>
