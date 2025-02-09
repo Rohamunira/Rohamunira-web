@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="external icon" href="../images/icons/rohamunira_icon_big.png" />
-    <meta name="keywords" content="Rohamunira, Content creator, blog"/>
+    <meta name="keywords" content="Rohamunira, Content creator, blog, programmer"/>
     <link rel="external stylesheet" href="../styles/style.css" />
     <link rel="external stylesheet" href="../styles/blog.css" />
     <title>Rohanimura - Blog</title>
@@ -32,6 +32,7 @@
                     <h1>{{ data.title }}</h1> <!-- select title -->
                     <div class="post-info">
                         posted date: <span class="value">{{ data.date }}</span><br/>
+                        edited date: <span class="value">{{ data.edited }}</span><br/>
                         category: <span class="value">{{ data.category }}</span>
                     </div>
                     <div v-html="(data.header_content).substring(0, 100)" class="short-desc"></div>

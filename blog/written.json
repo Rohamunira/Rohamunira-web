@@ -3,30 +3,37 @@
         {
             "title": "About Python",
             "header_content": "This is a post that tells about python in my perspective and my knowledge",
-            "date": "2/7/2025",
+            "date": "2/9/2025",
+            "edited": "2/9/2025",
             "category": "programming language",
-            "content": "python is the best programming language"
-        },
-        {
-            "title": "Vue Js",
-            "header_content": "My experience of using Vue Js is writen in here",
-            "date": "2/7/2025",
-            "category": "programming language",
-            "content": "vue is is add templating like PHP"
-        },
-        {
-            "title": "Flask Jinja",
-            "header_content": "some of my experience of using Flask Jinja",
-            "date": "2/7/2025",
-            "category": "programming language",
-            "content": "this is my seccondary tool to create templating like <b>PHP</b><br><br>test"
-        },
-        {
-            "title": "Playwright",
-            "header_content": "Playwright experience",
-            "date": "2/7/2025",
-            "category": "programming language",
-            "content": "this is best UI automation tools which is can click button based UI not coords"
+            "content": [
+                "<p>python is a programming language in industry 4.0 that has a large community, fast in typing, but sometimes slower for some things, just requires experience to make it faster. I am interested in python. I am been using python for 1 year, I almost forgot about web development, then Rohamunira Web this project is to reincarnate my web development knowledge.</p>",
+                "<p>Python programming language for me is very striking because many package that i know. i've been learning, Json, Playwright, Flet UI, Flask Jinja, And many other things.</p>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>",
+                "<br>"
+            ]
         }
     ]
 }

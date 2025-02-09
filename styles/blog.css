@@ -25,7 +25,9 @@ div.blogOutput {
         font-family: 'NexaHeavy'!important;
     }
     div.content {
+        margin-top: 1em;
         font-family: Arial;
+        font-size: 21px;
     }
 }
 div.blogList {
@@ -58,9 +60,9 @@ div.blogList {
                 }
             }
             .short-desc {
+                margin-top: 1em;
                 font-family: Arial;
                 display: inline-block;
-                margin: 0px;
                 padding: 0px;
                 color: #ddd;
             }
