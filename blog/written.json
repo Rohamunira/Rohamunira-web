@@ -1,10 +1,10 @@
 {
-    "blog": [
-        {
+    "blog": {
+        "about-python.html": {
             "title": "About Python",
             "header_content": "This is a post that tells about python in my perspective and my knowledge",
             "date": "2/9/2025",
-            "edited": "2/9/2025",
+            "edited": "2/11/2025",
             "category": "programming language",
             "content": [
                 "<p>python is a programming language in industry 4.0 that has a large community, fast in typing, but sometimes slower for some things, just requires experience to make it faster. I am interested in python. I am been using python for 1 year, I almost forgot about web development, then Rohamunira Web this project is to reincarnate my web development knowledge.</p>",
@@ -34,6 +34,15 @@
                 "<br>",
                 "<br>"
             ]
+        },
+        "false.html": {
+            "title": "page not found",
+            "header_content": "",
+            "date": "",
+            "edited": "",
+            "category": "",
+            "content": [
+            ]
         }
-    ]
+    }
 }

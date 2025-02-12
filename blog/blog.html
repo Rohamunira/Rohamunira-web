@@ -28,7 +28,7 @@
     <div class="content">
         <div class="blogList">
             <div v-for="(data, index) in blog_data.blog" class="blogLi">
-                <a :href="'blog-output.html?index=' + index"><div class="blogContainer"> <!-- :href return js expression result -->
+                <a :href="'all-post/' + index"><div class="blogContainer"> <!-- :href return js expression result, old version 'blog-output.html?index=' + index -->
                     <h1>{{ data.title }}</h1> <!-- select title -->
                     <div class="post-info">
                         posted date: <span class="value">{{ data.date }}</span><br/>
