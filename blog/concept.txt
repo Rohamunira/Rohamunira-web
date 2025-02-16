@@ -1,0 +1,5 @@
+get list file in all-post
+
+display single
+
+on click open 

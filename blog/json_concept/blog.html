@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Rohamunira, Content creator, blog, programmer"/>
-    <link rel="external icon" href="../images/icons/rohamunira_icon_big.png" />
-    <link rel="external stylesheet" href="../styles/style.css" />
-    <link rel="external stylesheet" href="../styles/blog.css" />
+    <link rel="external icon" href="../../images/icons/rohamunira_icon_big.png" />
+    <link rel="external stylesheet" href="../../styles/style.css" />
+    <link rel="external stylesheet" href="../../styles/blog.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.45/dist/vue.global.prod.js"></script>
     <title>Rohanimura - Blog</title>
 </head>
@@ -16,20 +16,20 @@
     </div>
     <!-- background samples -->
     <div class="navigationBar">
-        <a href="../index.html"><img src="../images/icons/rohamunira_icon_big.png" width="40px" /></a>
+        <a href="../../index.html"><img src="../../images/icons/rohamunira_icon_big.png" width="40px" /></a>
         <div>
             <nav>
-                <a href="../index.html">home</a>
-                <a href="../showcase/showcase.html">showcase</a>
+                <a href="../../index.html">home</a>
+                <a href="../../showcase/showcase.html">showcase</a>
                 <a href="blog.html">blog</a>
-                <a href="../about/about.html">about</a>
+                <a href="../../about/about.html">about</a>
             </nav>
         </div>
     </div>
     <div class="content">
         <div class="blogList">
             <div v-for="(data, index) in blog_data.blog" class="blogLi">
-                <a :href="'all-post/' + index"><div class="blogContainer"> <!-- :href return js expression result, old version 'blog-output.html?index=' + index -->
+                <a :href="'blog-output.html?index=' + index"><div class="blogContainer"> <!-- :href return js expression result, old version 'blog-output.html?index=' + index -->
                     <h1>{{ data.title }}</h1> <!-- select title -->
                     <div class="post-info">
                         posted date: <span class="value">{{ data.date }}</span><br/>
