@@ -30,6 +30,9 @@ div.blogOutput {
         font-size: 21px;
     }
 }
+div.blogLi:hover {
+    transform: scale(1.02);
+}
 div.blogList {
     width: 60vw;
     margin: 0px auto;
@@ -38,6 +41,7 @@ div.blogList {
     right: 0px;
     z-index: 0;
     .blogLi {
+        transition: 0.9s!important;
         a {
             text-decoration: none;
         }
