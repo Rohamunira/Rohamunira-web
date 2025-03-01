@@ -1,0 +1,6 @@
+{{ $datetime := .PublishDate.Format "2006-01-02" }}
+{{ $dateFormat := .Site.Params. }}
+<span class="material-symbols-outlined">calendar_today</span>
+<time datetime="{{ $datetime }}">{{ .PublishDate.Format $dateFormat }}</time>
+{{ with .Params.tags }}
+<i data="">
