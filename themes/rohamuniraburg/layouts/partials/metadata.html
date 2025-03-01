@@ -1,5 +1,5 @@
 {{ $datetime := .PublishDate.Format "2006-01-02" }}
-{{ $dateFormat := .Site.Params. }}
+{{ $dateFormat := .Site.Params | default "Jan 2, 2006" }}
 <span class="material-symbols-outlined">calendar_today</span>
 <time datetime="{{ $datetime }}">{{ .PublishDate.Format $dateFormat }}</time>
 {{ with .Params.tags }}
