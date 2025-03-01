@@ -1,0 +1,12 @@
+<header id="nav-border" class="container">
+    <nav id="nav" class="nav justify-content-center">
+        {{ range .Site.Menus.main }}
+        <a class="nav-link" href="{{ URL }}">
+            {{ if .Pre }}
+                {{ printf "<i data-feather='%s'></i>" .Pre | safeHTML }}
+            {{ end }}
+            {{ print .Name | safeHTML }}
+        </a>
+        {{ end }}
+    </nav>
+</header>
