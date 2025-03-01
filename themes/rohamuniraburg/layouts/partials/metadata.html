@@ -3,4 +3,10 @@
 <span class="material-symbols-outlined">calendar_today</span>
 <time datetime="{{ $datetime }}">{{ .PublishDate.Format $dateFormat }}</time>
 {{ with .Params.tags }}
-<i data="">
+    <span class="material-symbols-outlined">sell</span>
+    <i data-feather="tag"></i>
+    {{ range . }}
+        {{ $href := print (absURL "tags/") (urlize .) }}
+        <a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}"></a>
+    {{ end }}    
+{{ end }}
